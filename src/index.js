@@ -4,10 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.bundle"
+import {BrowserRouter} from 'react-router-dom'
+import Home from './pages/home';
+
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+<BrowserRouter>
+  <App />
+</BrowserRouter>,
+
+
   document.getElementById('root')
 );
 
